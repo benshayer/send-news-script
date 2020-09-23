@@ -67,7 +67,7 @@ def send_news():
 		smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 		smtp.send_message(msg)
 
-schedule.every().day.at('18:15').do(send_news)
+schedule.every().day.at('08:00').do(send_news)
 
 while True:
 	schedule.run_pending()
