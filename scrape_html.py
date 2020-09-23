@@ -58,7 +58,7 @@ def send_news():
 	msg=EmailMessage()
 	msg['Subject'] = 'Breaking News from the Jerusalem Post'
 	msg['From'] = EMAIL_ADDRESS
-	msg['To'] = 'shayerb5@gmail.com'
+	msg['To'] = EMAIL_ADDRESS
 	msg.set_content('This is plain HTML news')
 
 	msg.add_alternative(breaking_news, subtype='html')
